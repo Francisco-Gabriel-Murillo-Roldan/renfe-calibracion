@@ -1,6 +1,6 @@
 # Fichas Técnicas
 
-Esta carpeta contiene las fichas técnicas de las 8 locomotoras calibradas:
+Esta carpeta contiene las fichas técnicas de las 12 locomotoras calibradas:
 - RENFE 313
 - RENFE 316
 - RENFE 318
