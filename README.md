@@ -42,7 +42,7 @@ As a result, **8 locomotive series** (ALCO and General Motors) have been calibra
 
 /renfe-calibracion
 README.md # This file
-  /Fichas-Tecnicas # Complete documentation for each series (8 PDFs)
+  /Fichas-Tecnicas # Complete documentation for each series (10 PDFs)
   /Experimentos # Documented experiments (braking, adhesion, controls)
   /Parametros-Clave # Summary tables with final parameter values per series
   /OpenRails-Logs # Annotated "before and after" logs of corrections
