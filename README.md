@@ -1,5 +1,5 @@
 # renfe-calibracion
-Reverse engineering applied to railway simulation. Analysis of adhesion, braking, and traction physics for 8 RENFE locomotive series through experimental testing.
+Reverse engineering applied to railway simulation. Analysis of adhesion, braking, and traction physics for 11 RENFE locomotive series through experimental testing.
 
 # Diesel Locomotive Parametric Calibration Project for Open Rails
 
@@ -13,7 +13,7 @@ This repository documents a reverse engineering project applied to the **Open Ra
 
 A proprietary calibration method (the "Teluroncio Method") was developed to adjust the adhesion, braking, and traction physics of diesel locomotives, using **authentic technical documentation** (tractive effort curves, operator manuals, RENFE datasheets) and a rigorous **empirical testing plan** standardized on a 2% grade with 600 tons.
 
-As a result, **8 locomotive series** (ALCO and General Motors) have been calibrated, spanning different technological generations from the 1960s to the 2000s.
+As a result, **11 locomotive series** (ALCO and General Motors) have been calibrated, spanning different technological generations from the 1960s to the 2000s.
 
 ## 🚂 Calibrated Locomotives
 
@@ -42,7 +42,7 @@ As a result, **8 locomotive series** (ALCO and General Motors) have been calibra
 
 /renfe-calibracion
 README.md # This file
-  /Fichas-Tecnicas # Complete documentation for each series (10 PDFs)
+  /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
   /Experimentos # Documented experiments (braking, adhesion, controls)
   /Parametros-Clave # Summary tables with final parameter values per series
   /OpenRails-Logs # Annotated "before and after" logs of corrections
@@ -64,7 +64,7 @@ README.md # This file
 
 | File / Folder | Description |
 | :--- | :--- |
-| **`/Fichas-Tecnicas/`** | Technical datasheets for 8 locomotives (ALCO 313, 318, 321; GM 319.2, 319.3, 319.4, 333.3, 333.4). |
+| **`/Fichas-Tecnicas/`** | Technical datasheets for 11 locomotives (ALCO 313, 316, 318, 321; GM 319.0, 319.2, 319.3, 319.4, 333.3, 333.4). |
 | **`/Experimentos/`** | Documentation of key experiments: brake shoe test on 333.3, continuous dynamic brake implementation, adhesion adjustment on 319.4. |
 | **`/Parametros-Clave/`** | Summary tables with final `MaxForce`, `MaxPower`, `C`, etc., values per series. |
 | **`/OpenRails-Logs/`** | Annotated logs showing evolution from unstable configurations to the final calibration. |
