@@ -79,21 +79,6 @@ No original work is being distributed. Therefore, no license or intellectual pro
 
 If you are the owner of any original asset referenced in this work and have concerns about its mention, please contact me directly.
 
-## ⚠️ Legal Note on Third-Party Files
-
-The work presented in this repository is based on analysis and experimentation with third-party locomotive add-ons for the Open Rails simulator. All testing and parameter tuning was performed on legitimate copies of these files, used solely for personal and educational purposes within the simulator.
-
-**This repository does NOT redistribute any original locomotive files (including `.eng`, `.inc`, `.s`, `.sd`, or sound files).** No part of any original add-on is included.
-
-Only the following original content is provided:
-- Proposed parameter modifications and calibration values.
-- Analytical results, performance comparisons, and experimental data.
-- Original technical documentation (datasheets, experiment logs, analysis).
-
-This work is the result of reverse engineering and independent analysis. It is intended for educational and portfolio purposes only. The content does not infringe on the intellectual property rights of the original authors, as no proprietary files are distributed.
-
-If you are the owner of any original asset referenced in this analysis and have concerns, please contact me directly.
-
 ## 📜 License
 
 The content of this repository (documentation, analysis, experiments) is licensed under the **MIT License**.
