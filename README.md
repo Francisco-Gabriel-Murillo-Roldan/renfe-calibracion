@@ -23,9 +23,11 @@ As a result, **11 locomotive series** (ALCO and General Motors) have been calibr
 | 1600 / 316 | ALCO | 1120 | 109.5 | 0.15 | 21 km/h | Classic DC |
 | 1800 / 318 | ALCO | 1200 | 96 | 0.122 | 42 km/h | Classic DC |
 | 2100 / 321 | ALCO | 1330 | 102 | 0.102 | 31 km/h | Classic DC |
+| 319.0 | GM | 1342 | 111 | 0.102 | 44.5 km/h | AC/DC, no wheel slip control | 
 | 319.2 | GM / MACOSA | 1395 | 110 | 0.155 | 28 km/h | AC/DC, no wheel slip control |
 | 319.3 | GM / MEINFESA | 1512 | 110 | 0.165 | 31 km/h | AC/DC, no wheel slip control |
 | 319.4 | GM / MEINFESA | 1399 | 116 | 0.18 | 28 km/h | AC/DC, **with wheel slip control** |
+| 333.0 | GM / NOHAB | 1875 | 120 | 0.18 | 40 km/h | **High power** |
 | 333.3 | Vossloh / Alstom | 2237 | 120 | 0.16 | 40 km/h | **High power, freight** |
 | 333.4 | Vossloh / Alstom | 2237 | 120 | 0.16 | 40 km/h | **High power, passenger** |
 
