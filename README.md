@@ -69,20 +69,15 @@ README.md # This file
 | **`/Parametros-Clave/`** | Summary tables with final `MaxForce`, `MaxPower`, `C`, etc., values per series. |
 | **`/OpenRails-Logs/`** | Annotated logs showing evolution from unstable configurations to the final calibration. |
 
-## 📜 License
+## ⚠️ Intellectual Property Notice
 
-The content of this repository (documentation, analysis, experiments) is licensed under the **MIT License**.
+The original locomotive files referenced in this analysis are the property of their respective authors. This repository **does not contain or redistribute any original files** (including `.eng`, `.inc`, `.s`, `.sd`, or any other asset).
 
-The full license text is available in the [`LICENSE`](LICENSE) file of this repository.
+All analyses, parameter values, technical documentation, and experimental data presented here are the result of my own personal calibration and testing work, conducted on my legitimate copies of the files for my private use in the Open Rails simulator.
 
-## 🙏 Acknowledgments
+No original work is being distributed. Therefore, no license or intellectual property right is infringed. The purpose of this repository is strictly educational and to demonstrate technical skills in reverse engineering and simulation calibration.
 
-This project was made possible by:
-
-- The original technical documentation from ALCO, General Motors, RENFE, and Vossloh / Alstom.
-- The Open Rails community (Elvas Tower and Coals to Newcastle forums).
-- AI-assisted tools for technical support and documentation structuring.
-- The GitHub platform for repository management and dissemination.
+If you are the owner of any original asset referenced in this work and have concerns about its mention, please contact me directly.
 
 ## ⚠️ Legal Note on Third-Party Files
 
@@ -98,5 +93,22 @@ Only the following original content is provided:
 This work is the result of reverse engineering and independent analysis. It is intended for educational and portfolio purposes only. The content does not infringe on the intellectual property rights of the original authors, as no proprietary files are distributed.
 
 If you are the owner of any original asset referenced in this analysis and have concerns, please contact me directly.
+
+## 📜 License
+
+The content of this repository (documentation, analysis, experiments) is licensed under the **MIT License**.
+
+The full license text is available in the [`LICENSE`](LICENSE) file of this repository.
+
+## 🙏 Acknowledgments
+
+This project was made possible by:
+
+- The original technical documentation from ALCO, General Motors, RENFE, and Vossloh / Alstom.
+- The Open Rails community (Elvas Tower and Coals to Newcastle forums).
+- AI-assisted tools for technical support and documentation structuring.
+- The GitHub platform for repository management and dissemination.
+
+
 ---
 *Last updated: May 2026*
