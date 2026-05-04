@@ -1,19 +1,24 @@
 # renfe-calibracion
-Reverse engineering applied to railway simulation. Analysis of adhesion, braking, and traction physics for 11 RENFE locomotive series through experimental testing.
+
+Ethical reverse engineering applied to railway simulation. Analysis of adhesion, braking, and traction physics for 11 RENFE locomotive series through experimental testing.
 
 # Diesel Locomotive Parametric Calibration Project for Open Rails
 
-**Author:** Francisco Gabriel Murillo Roldán  
-**Degree:** Mining Engineer  
+**Author:** Francisco Gabriel Murillo Roldán
+
+**Degree:** Mining Engineer
+
 **Methodology:** Teluroncio Method (empirical calibration through standardized testing)
 
 ## 📌 Project Overview
 
-This repository documents a reverse engineering project applied to the **Open Rails** open-source train simulator.
+This repository documents an ethical reverse engineering project applied to the **Open Rails** open-source train simulator.
 
 A proprietary calibration method (the "Teluroncio Method") was developed to adjust the adhesion, braking, and traction physics of diesel locomotives, using **authentic technical documentation** (tractive effort curves, operator manuals, RENFE datasheets) and a rigorous **empirical testing plan** standardized on a 2% grade with 600 tons.
 
 As a result, **11 locomotive series** (ALCO and General Motors) have been calibrated, spanning different technological generations from the 1960s to the 2000s.
+
+⚠️ **Important**: All analysis of configuration files (.eng, .inc) has been carried out exclusively on text-based parameter files for the sole purpose of correcting and improving simulation physics. This process does not involve software decompilation, circumvention of protection systems, or access to closed source code. No original third-party files are redistributed in this repository.
 
 ## 🚂 Calibrated Locomotives
 
@@ -23,7 +28,7 @@ As a result, **11 locomotive series** (ALCO and General Motors) have been calibr
 | 1600 / 316 | ALCO | 1120 | 109.5 | 0.15 | 21 km/h | Classic DC |
 | 1800 / 318 | ALCO | 1200 | 96 | 0.122 | 42 km/h | Classic DC |
 | 2100 / 321 | ALCO | 1330 | 102 | 0.102 | 31 km/h | Classic DC |
-| 319.0 | GM | 1342 | 111 | 0.102 | 44.5 km/h | AC/DC, no wheel slip control | 
+| 319.0 | GM | 1342 | 111 | 0.102 | 44.5 km/h | AC/DC, no wheel slip control |
 | 319.2 | GM / MACOSA | 1395 | 110 | 0.155 | 28 km/h | AC/DC, no wheel slip control |
 | 319.3 | GM / MEINFESA | 1512 | 110 | 0.165 | 31 km/h | AC/DC, no wheel slip control |
 | 319.4 | GM / MEINFESA | 1399 | 116 | 0.18 | 28 km/h | AC/DC, **with wheel slip control** |
@@ -34,7 +39,7 @@ As a result, **11 locomotive series** (ALCO and General Motors) have been calibr
 ## 🎯 Key Technical Achievements
 
 - **Development of a proprietary calibration method**: based on standardized testing and empirical result validation.
-- **Reverse engineering of adhesion parameters**: identification of the `C` parameter's role as a "switch" for weather sensitivity and wheel slip control technology.
+- **Ethical reverse engineering of adhesion parameters**: identification of the `C` parameter's role as a "switch" for weather sensitivity and wheel slip control technology.
 - **Brake calibration**: determination of the `ORTSMaxBrakeShoeForce` threshold at 20 kN per brake shoe, empirically validated to prevent wheel locking.
 - **Log analysis and debugging**: using the Open Rails log as a diagnostic tool to correct braking and traction instabilities.
 - **Modular configuration design**: centralization of parameters in `.inc` files, improving maintainability and scalability of the calibration.
@@ -43,11 +48,12 @@ As a result, **11 locomotive series** (ALCO and General Motors) have been calibr
 ## 📁 Repository Structure
 
 /renfe-calibracion
-README.md # This file
-  /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
-  /Experimentos # Documented experiments (braking, adhesion, controls)
-  /Parametros-Clave # Summary tables with final parameter values per series
-  /OpenRails-Logs # Annotated "before and after" logs of corrections
+├── README.md # This file
+├── LICENSE # MIT License
+├── /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
+├── /Experimentos # Documented experiments (braking, adhesion, controls)
+├── /Parametros-Clave # Summary tables with final parameter values per series
+└── /OpenRails-Logs # Annotated "before and after" logs of corrections
 
 
 ## 🛠️ Methodology (Teluroncio Method)
@@ -77,7 +83,7 @@ The original locomotive files referenced in this analysis are the property of th
 
 All analyses, parameter values, technical documentation, and experimental data presented here are the result of my own personal calibration and testing work, conducted on my legitimate copies of the files for my private use in the Open Rails simulator.
 
-No original work is being distributed. Therefore, no license or intellectual property right is infringed. The purpose of this repository is strictly educational and to demonstrate technical skills in reverse engineering and simulation calibration.
+This project constitutes **ethical reverse engineering** carried out exclusively for educational and technical correction purposes. No software decompilation, circumvention of protection systems, or access to closed source code has been performed. No original work is being distributed. Therefore, no license or intellectual property right is infringed. The purpose of this repository is strictly educational and to demonstrate technical skills in simulation calibration and parametric analysis.
 
 If you are the owner of any original asset referenced in this work and have concerns about its mention, please contact me directly.
 
@@ -87,6 +93,10 @@ The content of this repository (documentation, analysis, experiments) is license
 
 The full license text is available in the [`LICENSE`](LICENSE) file of this repository.
 
+## ✍️ Attribution
+
+The 3D models, textures, sounds, and original configuration files of the locomotives are the work of their respective authors. My contribution consists exclusively of the calibration of physical parameters based on original technical documentation from ALCO, General Motors, RENFE, and Vossloh / Alstom, validated through empirical testing and documented in this repository.
+
 ## 🙏 Acknowledgments
 
 This project was made possible by:
@@ -95,7 +105,6 @@ This project was made possible by:
 - The Open Rails community (Elvas Tower and Coals to Newcastle forums).
 - AI-assisted tools for technical support and documentation structuring.
 - The GitHub platform for repository management and dissemination.
-
 
 ---
 *Last updated: May 2026*
