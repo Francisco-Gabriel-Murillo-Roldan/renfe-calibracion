@@ -16,6 +16,7 @@
 
 | Carpeta / Folder | Contenido / Content |
 |:---|:---|
+| [`/docs/`](./docs/) | Documentación completa en español e inglés / Full documentation in Spanish and English |
 | [`/Fichas-Tecnicas/`](./Fichas-Tecnicas/) | Fichas por locomotora con parámetros finales / Per-locomotive sheets with final parameters |
 | [`/Experimentos/`](./Experimentos/) | Informes detallados de experimentos / Detailed experiment reports |
 | [`/Parametros-Clave/`](./Parametros-Clave/) | Tablas resumen comparativas / Comparative summary tables |
