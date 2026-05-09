@@ -46,4 +46,9 @@ MIT License. Ver / See [`LICENSE`](./LICENSE).
 
 ---
 
+👤 **Autor | Author:** Francisco Gabriel Murillo Roldán — Ingeniero de Minas | Mining Engineer
+📧 **[tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)**
+
+---
+
 *Mayo 2026*
