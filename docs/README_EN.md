@@ -115,6 +115,18 @@ This project was made possible by:
 - AI-assisted tools for technical support and documentation structuring.
 - The GitHub platform for repository management and dissemination.
 
+- ---
+
+## 👤 About the Author
+
+**Francisco Gabriel Murillo Roldán**
+Mining Engineer
+
+Specialised in parametric calibration of rolling stock for railway simulation, wheel-rail adhesion analysis, and empirical testing methodology applied to Open Rails.
+
+📧 **[tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)**
+🔗 **[linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)**
+
 ---
 *Last updated: May 2026*
 Yuan, Z., Wu, M., Tian, C., Zhou, J., & Chen, C. (2021). A Review on the Application of Friction Models in Wheel-Rail Adhesion Calculation. Urban Rail Transit, 7(1), 1–11. DOI: 10.1007/s40864-021-00141-4
