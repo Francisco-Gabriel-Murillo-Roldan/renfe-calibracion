@@ -47,17 +47,14 @@ Como resultado, se han calibrado **11 series de locomotoras** (ALCO y General Mo
 
 ## 📁 Estructura del Repositorio
 
-/renfe-calibracion
-├── README.md # Resumen del repositorio (bilingüe)
-├── LICENSE # Licencia MIT
-├── /docs # Documentación completa
-│ ├── README_ES.md # Este archivo
-│ └── README_EN.md # Versión en inglés
-├── /Fichas-Tecnicas # Documentación completa por serie (11 PDFs)
-├── /Experimentos # Experimentos documentados (frenado, adherencia, mandos)
-├── /Parametros-Clave # Tablas resumen con valores finales por serie
-├── /Curvas-Traccion # Programas Maxima y CSVs de curvas propias
-└── /OpenRails-Logs # Logs comentados "antes y después" de las correcciones
+| Carpeta / Folder | Contenido |
+|:---|:---|
+| [`/docs/`](./docs/) | Documentación completa en español e inglés |
+| [`/Fichas-Tecnicas/`](./Fichas-Tecnicas/) | Fichas por locomotora con parámetros finales |
+| [`/Experimentos/`](./Experimentos/) | Informes detallados de experimentos |
+| [`/Parametros-Clave/`](./Parametros-Clave/) | Tablas resumen comparativas |
+| [`/OpenRails-Logs/`](./OpenRails-Logs/) | Logs de pruebas Antes/Después |
+| [`/Curvas-Traccion/`](./Curvas-Traccion/) | Programas Maxima y CSVs de curvas propias |
 
 ## 📚 Fundamento Teórico
 
