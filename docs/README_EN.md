@@ -57,14 +57,16 @@ This review validates the choice of a velocity-dependent friction model (as oppo
 ## 📁 Repository Structure
 
 /renfe-calibracion
-├── README.md # This file
+├── README.md # Repository overview (bilingual)
 ├── LICENSE # MIT License
-   ├── /docs # Complete documentation in English and Spanish
-   ├── /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
-   ├── /Experimentos # Documented experiments (braking, adhesion, controls)
-   ├── /Parametros-Clave # Summary tables with final parameter values per series
-   └── /OpenRails-Logs # Annotated "before and after" logs of corrections
-
+├── /docs # Full documentation
+│ ├── README_EN.md # This file
+│ └── README_ES.md # Spanish version
+├── /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
+├── /Experimentos # Documented experiments (braking, adhesion, controls)
+├── /Parametros-Clave # Summary tables with final parameter values per series
+├── /Curvas-Traccion # Maxima scripts and CSVs for custom traction curves
+└── /OpenRails-Logs # Annotated "before and after" logs of corrections
 
 ## 🛠️ Methodology (Teluroncio Method)
 
