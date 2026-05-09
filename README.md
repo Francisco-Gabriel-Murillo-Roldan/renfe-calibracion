@@ -12,11 +12,11 @@
 
 ---
 
-** Author:** Francisco Gabriel Murillo Roldán
+**Author:** Francisco Gabriel Murillo Roldán
 
-Degree: Mining Engineer
+**Degree:** Mining Engineer
 
-Methodology: Teluroncio Method (empirical calibration through standardized testing)
+**Methodology:** Teluroncio Method (empirical calibration through standardized testing)
 
 ---
 
