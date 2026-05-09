@@ -117,6 +117,18 @@ Este proyecto ha sido posible gracias a:
 - Herramientas asistidas por IA para soporte técnico y estructuración de documentación.
 - La plataforma GitHub para la gestión y difusión del repositorio.
 
+- ---
+
+## 👤 Sobre el Autor 
+
+**Francisco Gabriel Murillo Roldán**
+Ingeniero de Minas 
+
+Especializado en calibración paramétrica de material rodante para simulación ferroviaria, análisis de adherencia rueda-carril y metodología de pruebas empíricas aplicadas a Open Rails.
+
+📧 **[tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)**
+🔗 **[linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)**
+
 ---
 
 *Última actualización: Mayo 2026*
