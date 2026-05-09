@@ -12,6 +12,14 @@
 
 ---
 
+Author: Francisco Gabriel Murillo Roldán
+
+Degree: Mining Engineer
+
+Methodology: Teluroncio Method (empirical calibration through standardized testing)
+
+---
+
 ## 📁 Estructura del Repositorio | Repository Structure
 
 | Carpeta / Folder | Contenido / Content |
