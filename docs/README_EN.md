@@ -128,8 +128,7 @@ Mining Engineer
 
 Specialised in parametric calibration of rolling stock for railway simulation, wheel-rail adhesion analysis, and empirical testing methodology applied to Open Rails.
 
-📧 **[tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)**
-🔗 **[linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)**
+🔗 **[LinkedIn](https://www.linkedin.com/in/francisco-murillo-9946a43b3)**
 
 ---
 *Last updated: May 2026*
