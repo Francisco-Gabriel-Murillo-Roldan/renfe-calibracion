@@ -132,4 +132,3 @@ Specialised in parametric calibration of rolling stock for railway simulation, w
 
 ---
 *Last updated: May 2026*
-Yuan, Z., Wu, M., Tian, C., Zhou, J., & Chen, C. (2021). A Review on the Application of Friction Models in Wheel-Rail Adhesion Calculation. Urban Rail Transit, 7(1), 1–11. DOI: 10.1007/s40864-021-00141-4
