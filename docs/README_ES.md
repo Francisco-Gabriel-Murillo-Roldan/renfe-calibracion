@@ -5,7 +5,9 @@ Ethical reverse engineering aplicado a la simulación ferroviaria. Análisis de 
 # Proyecto de Calibración Paramétrica de Locomotoras Diésel para Open Rails
 
 **Autor:** Francisco Gabriel Murillo Roldán
+
 **Titulación:** Ingeniero de Minas
+
 **Metodología:** Método Teluroncio (calibración empírica mediante pruebas estandarizadas)
 
 ## 📌 Resumen del Proyecto
