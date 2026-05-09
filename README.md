@@ -20,6 +20,15 @@ As a result, **11 locomotive series** (ALCO and General Motors) have been calibr
 
 ⚠️ **Important**: All analysis of configuration files (.eng, .inc) has been carried out exclusively on text-based parameter files for the sole purpose of correcting and improving simulation physics. This process does not involve software decompilation, circumvention of protection systems, or access to closed source code. No original third-party files are redistributed in this repository.
 
+## 📚 Theoretical Foundation
+
+The Teluroncio Method draws its inspiration from the wheel-rail adhesion modelling developed in the scientific literature. In particular, the work by Yuan et al. (2021) provides an exhaustive review of friction models (Coulomb, rational, exponential) applied to adhesion calculation, including the rational model by Bochet from which the **Curtius-Kniffler algorithm** — the adhesion model implemented in Open Rails — is derived.
+
+This review validates the choice of a velocity-dependent friction model (as opposed to the constant-friction Coulomb model) for realistically simulating the adhesion behaviour of railway vehicles. The empirical approach of the Teluroncio Method — standardized grade testing, iterative adjustment of the `A`, `B`, `C` parameters, and climatic validation — is the practical application of these theoretical principles to the Open Rails simulation environment.
+
+**Reference:**
+> Yuan, Z., Wu, M., Tian, C., Zhou, J., & Chen, C. (2021). *A Review on the Application of Friction Models in Wheel-Rail Adhesion Calculation*. Urban Rail Transit, 7(1), 1–11. DOI: [10.1007/s40864-021-00141-4](https://doi.org/10.1007/s40864-021-00141-4)
+
 ## 🚂 Calibrated Locomotives
 
 | RENFE Series | Manufacturer | Rail Power (kW) | Weight (t) | `C` (CK) | Speed (2%, 600 t) | Technology |
