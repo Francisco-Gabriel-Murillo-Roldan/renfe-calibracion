@@ -56,17 +56,18 @@ This review validates the choice of a velocity-dependent friction model (as oppo
 
 ## 📁 Repository Structure
 
-/renfe-calibracion
-├── README.md # Repository overview (bilingual)
-├── LICENSE # MIT License
-├── /docs # Full documentation
-│ ├── README_EN.md # This file
-│ └── README_ES.md # Spanish version
-├── /Fichas-Tecnicas # Complete documentation for each series (11 PDFs)
-├── /Experimentos # Documented experiments (braking, adhesion, controls)
-├── /Parametros-Clave # Summary tables with final parameter values per series
-├── /Curvas-Traccion # Maxima scripts and CSVs for custom traction curves
-└── /OpenRails-Logs # Annotated "before and after" logs of corrections
+| Path | Description |
+|:---|:---|
+| 📄 **[README.md](../README.md)** | Bilingual executive summary of the project |
+| 📄 **[LICENSE](../LICENSE)** | MIT License |
+| 📁 **[docs/](./)** | Full documentation (this folder) |
+| │ ├ 📄 **README_EN.md** | This file |
+| │ └ 📄 **README_ES.md** | Spanish version |
+| 📁 **[Fichas-Tecnicas/](../Fichas-Tecnicas/)** | Technical datasheets for 11 locomotives (PDF) |
+| 📁 **[Experimentos/](../Experimentos/)** | Detailed calibration experiment reports |
+| 📁 **[Parametros-Clave/](../Parametros-Clave/)** | Comparative summary tables across series |
+| 📁 **[Curvas-Traccion/](../Curvas-Traccion/)** | Maxima scripts and CSVs for custom traction curves |
+| 📁 **[OpenRails-Logs/](../OpenRails-Logs/)** | Annotated Before/After test logs |
 
 ## 🛠️ Methodology (Teluroncio Method)
 
