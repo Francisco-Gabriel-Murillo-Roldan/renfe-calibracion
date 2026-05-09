@@ -126,8 +126,7 @@ Ingeniero de Minas
 
 Especializado en calibración paramétrica de material rodante para simulación ferroviaria, análisis de adherencia rueda-carril y metodología de pruebas empíricas aplicadas a Open Rails.
 
-📧 **[tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)**
-🔗 **[linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)**
+🔗 **[LinkedIn](https://www.linkedin.com/in/francisco-murillo-9946a43b3)**
 
 ---
 
