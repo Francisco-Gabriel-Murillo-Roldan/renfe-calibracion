@@ -12,7 +12,7 @@
 
 ---
 
-Author: Francisco Gabriel Murillo Roldán
+** Author:** Francisco Gabriel Murillo Roldán
 
 Degree: Mining Engineer
 
