@@ -161,29 +161,4 @@
 	print("Vmax comercial: ", v_max_kmh, "km/h")$
 	print("Vmax grafico: 170 km/h")$
 
-
-"--- DATOS DEL ESFUERZO CONTINUO ---"
-
-"Velocidad: "7.5530435017489825"m/s ="27.19095660629634"km/h"
-
-"Esfuerzo: "29617.2"daN ="296.172"kN"
-
-"Archivo CSV generado: curva_traccion_final.csv"
-
-"Archivo para Open Rails generado: curva_traccion_OR.txt"
-
-
-
-"--- RESUMEN ---"
-
-"Locomotora: Renfe Serie 333.3"
-
-"Arranque: "376.704"kN"
-
-"Continuo: "296.172"kN a "27.19095660629634"km/h"
-
-"Potencia: "2237.0"kW"
-
-"Vmax comercial: "160"km/h"
-
 "Vmax grafico: 170 km/h"
