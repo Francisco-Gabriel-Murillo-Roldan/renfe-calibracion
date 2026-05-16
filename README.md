@@ -1,6 +1,6 @@
 # renfe-calibracion
 
-*English version below | Versión en español más abajo*
+*English version below*
 
 ---
 
