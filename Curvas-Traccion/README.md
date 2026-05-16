@@ -1,0 +1,84 @@
+# Curvas-Traccion / Traction Curves
+
+*English version below | Versión en español más abajo*
+
+---
+
+## 📌 Descripción
+
+**Español:** Esta carpeta contiene el programa en Maxima/WxMaxima desarrollado para el **Método Teluroncio** que genera curvas de esfuerzo de tracción físicamente correctas para locomotoras diésel en Open Rails. El programa resuelve numéricamente las ecuaciones de adherencia (Curtius-Kniffler) y potencia constante, calcula automáticamente el punto de transición de esfuerzo continuo, y genera dos archivos de salida: un CSV documentado para análisis y un TXT listo para copiar directamente al parámetro `ORTSMaxTractiveForceCurves` del archivo `.inc` o `.eng`.
+
+**English:** This folder contains the Maxima/WxMaxima program developed for the **Teluroncio Method** that generates physically correct tractive effort curves for diesel locomotives in Open Rails. The program numerically solves the adhesion (Curtius-Kniffler) and constant-power equations, automatically calculates the continuous-effort transition point, and generates two output files: a documented CSV for analysis and a TXT ready for direct copy-paste into the `ORTSMaxTractiveForceCurves` parameter of the `.inc` or `.eng` file.
+
+---
+
+## 📁 Contenido de la Carpeta | Folder Contents
+
+| Archivo / File | Descripción / Description |
+|:---|:---|
+| 📄 **README.md** | Este archivo / This file |
+| 📄 **curva_333_3.wxmx** | Programa Maxima editable para la serie 333.3 / Editable Maxima program for the 333.3 series |
+| 📄 **curva_333_3.csv** | Salida CSV con 7 columnas y metadatos (32 puntos) / CSV output with 7 columns and metadata (32 points) |
+| 📄 **curva_333_3_OR.txt** | Salida TXT lista para copiar al .inc o .eng / TXT output ready for copy-paste into .inc or .eng |
+| 📄 **curva_333_3.pdf** | Gráfica de salida del programa / Program output plot |
+
+---
+
+## 🛠️ Requisitos | Requirements
+
+- **Maxima** (versión 5.44.0 o superior)
+- **WxMaxima** (interfaz gráfica, opcional pero recomendada)
+- Descarga gratuita: [https://wxmaxima-developers.github.io/wxmaxima/](https://wxmaxima-developers.github.io/wxmaxima/)
+
+---
+
+## 🚀 Instrucciones de Uso | Usage Instructions
+
+### Español
+
+1. Abrir el archivo `.wxmx` en WxMaxima.
+2. Ajustar los **6 parámetros** al inicio del programa para la locomotora deseada:
+   - `m_locom`: masa en toneladas (ej. `120e3` para 120 t)
+   - `g`: aceleración de la gravedad (`9.81`)
+   - `mu0`: coeficiente de adherencia inicial (ej. `0.32`)
+   - `P_nom_llanta`: potencia nominal al riel en vatios (ej. `2237e3` para 2.237 kW)
+   - `v_max_kmh`: velocidad máxima en km/h (ej. `160`)
+   - `A`, `B`, `C`: coeficientes de Davis para resistencia al avance
+3. Ejecutar el programa (Ctrl+R o menú Celda → Evaluar todas las celdas).
+4. Recoger los archivos generados en el Escritorio:
+   - `curva_traccion_final.csv` → para análisis detallado.
+   - `curva_traccion_OR.txt` → para copiar y pegar en el `.inc` o `.eng`.
+
+### English
+
+1. Open the `.wxmx` file in WxMaxima.
+2. Adjust the **6 parameters** at the beginning of the program for the desired locomotive:
+   - `m_locom`: mass in tonnes (e.g. `120e3` for 120 t)
+   - `g`: gravity acceleration (`9.81`)
+   - `mu0`: initial adhesion coefficient (e.g. `0.32`)
+   - `P_nom_llanta`: nominal rail power in watts (e.g. `2237e3` for 2,237 kW)
+   - `v_max_kmh`: maximum speed in km/h (e.g. `160`)
+   - `A`, `B`, `C`: Davis coefficients for running resistance
+3. Run the program (Ctrl+R or menu Cell → Evaluate All Cells).
+4. Collect the generated files on the Desktop:
+   - `curva_traccion_final.csv` → for detailed analysis.
+   - `curva_traccion_OR.txt` → for copy-paste into `.inc` or `.eng`.
+
+---
+
+## 📊 Versiones del Programa | Program Versions
+
+| Versión | Fecha | Mejoras |
+|:---|:---|:---|
+| **0.1** | Mayo 2026 | Entrega inicial: gráfica, CSV con 7 columnas, punto de transición calculado. |
+| **0.2** | Mayo 2026 | Inserción automática del punto de transición en la lista de puntos (32 puntos totales). Salida adicional `curva_traccion_OR.txt` formateada para copiar directamente a Open Rails. |
+
+---
+
+## 📚 Referencia | Reference
+
+Yuan, Z., Wu, M., Tian, C., Zhou, J., & Chen, C. (2021). *A Review on the Application of Friction Models in Wheel-Rail Adhesion Calculation*. Urban Rail Transit, 7(1), 1–11. DOI: [10.1007/s40864-021-00141-4](https://doi.org/10.1007/s40864-021-00141-4)
+
+---
+
+*Mayo 2026*
