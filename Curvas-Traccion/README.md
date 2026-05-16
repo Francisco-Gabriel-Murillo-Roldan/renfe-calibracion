@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Descripción
+## 📌 Descripción | Description
 
 **Español:** Esta carpeta contiene el programa en Maxima/WxMaxima desarrollado para el **Método Teluroncio** que genera curvas de esfuerzo de tracción físicamente correctas para locomotoras diésel en Open Rails. El programa resuelve numéricamente las ecuaciones de adherencia (Curtius-Kniffler) y potencia constante, calcula automáticamente el punto de transición de esfuerzo continuo, y genera dos archivos de salida: un CSV documentado para análisis y un TXT listo para copiar directamente al parámetro `ORTSMaxTractiveForceCurves` del archivo `.inc` o `.eng`.
 
