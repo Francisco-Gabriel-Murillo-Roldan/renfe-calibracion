@@ -5,7 +5,7 @@
 # Coef. adherencia inicial: .3
 # Esfuerzo en arranque: 377. kN
 # Esfuerzo continuo (transicion): 296.17 kN a 27.19 km/h
-# Coeficientes Davis (OR): A=916 B=42 C=4.85
+# Coeficientes Davis (OR): A=916, B=42, C=4.85
 # 
 V_kmh,V_ms,ET_kN,ET_N,F_gancho_0_kN,F_gancho_20_kN,P_kW
 0.0,0.0,376.704,376704.0,375.788,352.244,0.0
