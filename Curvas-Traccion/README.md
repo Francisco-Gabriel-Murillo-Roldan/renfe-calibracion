@@ -17,9 +17,9 @@
 | Archivo / File | Descripción / Description |
 |:---|:---|
 | 📄 **README.md** | Este archivo / This file |
-| 📄 **curva_333_3.wxmx** | Programa Maxima editable para la serie 333.3 / Editable Maxima program for the 333.3 series |
-| 📄 **curva_333_3.csv** | Salida CSV con 7 columnas y metadatos (32 puntos) / CSV output with 7 columns and metadata (32 points) |
-| 📄 **curva_333_3_OR.txt** | Salida TXT lista para copiar al .inc o .eng / TXT output ready for copy-paste into .inc or .eng |
+| 📄 **CURVA_ET_Locomotoras_diesel_0.2.wxmx** | Programa Maxima editable para la serie 333.3 / Editable Maxima program for the 333.3 series |
+| 📄 **curva_traccion_final.csv** | Salida CSV con 7 columnas y metadatos (32 puntos) / CSV output with 7 columns and metadata (32 points) |
+| 📄 **curva_traccion_OR.txt** | Salida TXT lista para copiar al .inc o .eng / TXT output ready for copy-paste into .inc or .eng |
 | 📄 **curva_333_3.pdf** | Gráfica de salida del programa / Program output plot |
 
 ---
