@@ -1,0 +1,189 @@
+(%i61)	kill(all)$
+	load(draw)$
+	
+	/* ============================================================
+	   PROGRAMA DE CURVA DE TRACCION PARA LOCOMOTORAS DIESEL
+	   Salidas:
+	     - Grafico con 4 curvas (ET se extiende hasta 170 km/h)
+	     - CSV con metadatos y tabla completa (hasta 170 km/h)
+	     - TXT tabulado para copiar y pegar en .eng/.inc (hasta 160 km/h)
+	    Francisco Gabriel Murillo Roldán CC BY 4.0 url-> https://creativecommons.org/licenses/by/4.0/ 
+	    Versión 0.2 
+	    Mayo de 2026 
+	   ============================================================ */
+	
+	/* --- Datos locomotora diesel --- */
+	m_locom        : 120e3$       /* Masa locomotora en kg. Parámetro Mass del archivo .eng. */
+	g              : 9.81$        /* Gravedad (m/s^2). Definido, pero es posible usar 10 en su lugar */
+	mu0            : 0.32$        /* Coeficiente de adherencia inicial. Este valor es el que estoy usando en mis calibraciones. */
+	P_nom_llanta   : 2237e3$      /* Potencia nominal en llanta (W). Parámetro MaxPower del archivo .eng.  */
+	v_max_kmh      : 160$         /* Velocidad máxima (limitada por resistencia o normativa) en km/h.  Parámetro MaxVelocity. */
+	v_max_ms       : v_max_kmh / 3.6$
+	A : 916$                      /* Coeficiente A de Davis (OR) */
+	B : 42$                       /* Coeficiente B de Davis (OR) */
+	C : 4.85$                     /* Coeficiente C de Davis (OR) */
+	
+	/* --- Velocidad del esfuerzo continuo (transicion) --- */
+	v_trans_kmh : find_root(m_locom*g*mu0/(1+(1/100)*V) = 3.6*P_nom_llanta/V, V, 1, 100)$
+	v_trans_ms  : v_trans_kmh / 3.6$
+	F_trans     : m_locom * g * mu0 / (1 + (1/100) * v_trans_kmh)$
+	
+	print("")$
+	print("--- DATOS DEL ESFUERZO CONTINUO ---")$
+	print("Velocidad: ", float(v_trans_ms), "m/s =", float(v_trans_kmh), "km/h")$
+	print("Esfuerzo: ", float(F_trans/10), "daN =", float(F_trans/1000), "kN")$
+	
+	/* --- Curvas --- */
+	F_adh(v_kmh) := m_locom * g * mu0 / (1 + (1/100) * v_kmh)$
+	F_pot(v_kmh) := 3.6 * P_nom_llanta / v_kmh$
+	
+	/* Sin corte en v_max: la curva sigue hasta 170 km/h */
+	F_tract(v_kmh) := 
+	    if v_kmh <= 0 then m_locom * g * mu0
+	    else min(F_adh(v_kmh), F_pot(v_kmh))$
+	
+	F_tract_kN(v_kmh) := F_tract(v_kmh)/1000$
+	
+	/* Resistencia al avance (formula de Davis en kN) */
+	r_davis(v_kmh) := A/1000 + (B/3600)*v_kmh + (C/12960)*v_kmh^2$  /* transformación de los parámetros usados en Open Rails  [kN] */
+	R_run(v_kmh, pend) := r_davis(v_kmh) + (pend * g * m_locom)/1000$
+	
+	/* Esfuerzo en gancho (kN) */
+	F_gancho(v_kmh, pend) := F_tract_kN(v_kmh) - R_run(v_kmh, pend)$
+	
+	/* --- Listas de velocidades --- */
+	/* Lista completa para grafico y CSV (hasta 170 km/h) */
+	velocidades_base : [0,1,2,3,4,5,6,7,8,9,10,15,20,25,30,35,40,45,50,60,70,80,90,100,110,120,130,140,150,160,170]$
+	
+	/* Insertar velocidad de transicion si no existe */
+	if not member(v_trans_kmh, velocidades_base) then (
+	    velocidades : append(velocidades_base, [v_trans_kmh]),
+	    velocidades : sort(velocidades)
+	) else (
+	    velocidades : velocidades_base
+	)$
+	
+	/* Lista para Open Rails (solo hasta v_max = 160 km/h) */
+	velocidades_or_base : sublist(velocidades_base, lambda([v], v <= v_max_kmh))$
+	if not member(v_trans_kmh, velocidades_or_base) then (
+	    velocidades_or : append(velocidades_or_base, [v_trans_kmh]),
+	    velocidades_or : sort(velocidades_or)
+	) else (
+	    velocidades_or : velocidades_or_base
+	)$
+	
+	/* --- Grafico --- */
+	draw2d(
+	    title  = "Curva de traccion - Renfe Serie 333.3", /* Cambiar para cada locomotora */
+	    xlabel = "Velocidad (km/h)", ylabel = "Esfuerzo tractor (kN)",
+	    xrange = [0, 175], yrange = [0, 400], grid = true,
+	
+	    /* Esfuerzo tractor total */
+	    color = blue, line_width = 2.5, key = "Esfuerzo tractor total",
+	    points_joined = true, point_size = 0,
+	    points(makelist([v, F_tract(v)/1000], v, velocidades)),
+	
+	    /* Esfuerzo en gancho (recto) */
+	    color = red, line_width = 1.5, key = "Esfuerzo en gancho (recto)",
+	    points_joined = true, point_size = 0,
+	    points(makelist([v, max(0, F_gancho(v, 0))], v, velocidades)),
+	
+	    /* Esfuerzo en gancho (rampa 20 por mil) */
+	    color = dark_blue, line_width = 1.5, line_type = dots,
+	    key = "Esfuerzo en gancho (rampa 20 por mil)",
+	    points_joined = true, point_size = 0,
+	    points(makelist([v, max(0, F_gancho(v, 0.020))], v, velocidades)),
+	
+	    /* Resistencia al avance (recto) */
+	    color = green, line_width = 1, key = "Resistencia al avance (recto)",
+	    points_joined = true, point_size = 0,
+	    points(makelist([v, R_run(v, 0)], v, velocidades)),
+	
+	    /* Linea de transicion */
+	    color = gray, line_width = 1, line_type = dots,
+	    parametric(v_trans_kmh, t, t, 0, F_trans/1000),
+	
+	    /* Linea de velocidad maxima */
+	    color = dark_gray, line_width = 1, line_type = dashes,
+	    parametric(v_max_kmh, t, t, 0, F_tract(v_max_kmh)/1000)
+	)$
+	
+	/* --- CSV principal con metadatos (hasta 170 km/h) --- */
+	ruta_csv : "C:/Users/yomal/Desktop/curva_traccion_final.csv"$
+	file_output : openw(ruta_csv)$
+	
+	printf(file_output, "# Curva de traccion - Renfe Serie 333.3~%")$
+	printf(file_output, "# Masa: ~2f t~%", m_locom/1000)$
+	printf(file_output, "# Potencia en llanta: ~2f kW~%", P_nom_llanta/1000)$
+	printf(file_output, "# Velocidad maxima comercial: ~2f km/h~%", v_max_kmh)$
+	printf(file_output, "# Coef. adherencia inicial: ~2f~%", mu0)$
+	printf(file_output, "# Esfuerzo en arranque: ~2f kN~%", m_locom*g*mu0/1000)$
+	printf(file_output, "# Esfuerzo continuo (transicion): ~,2f kN a ~,2f km/h~%", F_trans/1000, v_trans_kmh)$
+	printf(file_output, "# Coeficientes Davis (OR): A=~d, B=~d, C=~f~%", A, B, C)$
+	printf(file_output, "# ~%")$
+	printf(file_output, "V_kmh,V_ms,ET_kN,ET_N,F_gancho_0_kN,F_gancho_20_kN,P_kW~%")$
+	
+	for v_kmh in velocidades do (
+	    v_ms  : v_kmh / 3.6,
+	    ET    : float(F_tract(v_kmh)/1000),
+	    ET_N  : float(F_tract(v_kmh)),
+	    Fg0   : float(max(0, F_gancho(v_kmh, 0))),
+	    Fg20  : float(max(0, F_gancho(v_kmh, 0.020))),
+	    P     : if v_ms > 0 then float(ET * v_ms) else 0.0,
+	    printf(file_output, "~f,~f,~f,~f,~f,~f,~f~%", v_kmh, v_ms, ET, ET_N, Fg0, Fg20, P)
+	)$
+	close(file_output)$
+	print("Archivo CSV generado: curva_traccion_final.csv")$
+	
+	/* --- Archivo tabulado para Open Rails (solo hasta 160 km/h) --- */
+	ruta_or : "C:/Users/yomal/Desktop/curva_traccion_OR.txt"$
+	file_or : openw(ruta_or)$
+	printf(file_or, "# Curva de traccion - Renfe Serie 333.3~%")$
+	printf(file_or, "# Formato: V(m/s) tab F(N) - Copiar y pegar en .eng/.inc~%")$
+	printf(file_or, "# Esfuerzo continuo: ~2f kN a ~2f km/h~%", F_trans/1000, v_trans_kmh)$
+	printf(file_or, "# ~%")$
+	
+	for v_kmh in velocidades_or do (
+	    v_ms  : float(v_kmh / 3.6),
+	    ET_N  : float(F_tract(v_kmh)),
+	    printf(file_or, "~,2f   ~d~%", v_ms, round(ET_N))
+	)$
+	close(file_or)$
+	print("Archivo para Open Rails generado: curva_traccion_OR.txt")$
+	
+	/* --- Resumen final --- */
+	print("")$
+	print("--- RESUMEN ---")$
+	print("Locomotora: Renfe Serie 333.3")$
+	print("Arranque: ", float(m_locom*g*mu0/1000), "kN")$
+	print("Continuo: ", float(F_trans/1000), "kN a ", float(v_trans_kmh), "km/h")$
+	print("Potencia: ", float(P_nom_llanta/1000), "kW")$
+	print("Vmax comercial: ", v_max_kmh, "km/h")$
+	print("Vmax grafico: 170 km/h")$
+
+
+"--- DATOS DEL ESFUERZO CONTINUO ---"
+
+"Velocidad: "7.5530435017489825"m/s ="27.19095660629634"km/h"
+
+"Esfuerzo: "29617.2"daN ="296.172"kN"
+
+"Archivo CSV generado: curva_traccion_final.csv"
+
+"Archivo para Open Rails generado: curva_traccion_OR.txt"
+
+
+
+"--- RESUMEN ---"
+
+"Locomotora: Renfe Serie 333.3"
+
+"Arranque: "376.704"kN"
+
+"Continuo: "296.172"kN a "27.19095660629634"km/h"
+
+"Potencia: "2237.0"kW"
+
+"Vmax comercial: "160"km/h"
+
+"Vmax grafico: 170 km/h"
