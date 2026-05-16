@@ -160,5 +160,3 @@
 	print("Potencia: ", float(P_nom_llanta/1000), "kW")$
 	print("Vmax comercial: ", v_max_kmh, "km/h")$
 	print("Vmax grafico: 170 km/h")$
-
-"Vmax grafico: 170 km/h"
