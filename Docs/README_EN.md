@@ -86,9 +86,12 @@ This review validates the choice of a velocity-dependent friction model (as oppo
 
 | File / Folder | Description |
 | :--- | :--- |
+| **`/Assets/`** | Project logo, corporate colour palette, and brand protection notice. |
+| **`/Docs/`** | Full documentation in Spanish (README_ES.md) and English (README_EN.md). |
 | **`/Fichas-Tecnicas/`** | Technical datasheets for 11 locomotives (ALCO 313, 316, 318, 321; GM 319.0, 319.2, 319.3, 319.4, 333.3, 333.4). |
 | **`/Experimentos/`** | Documentation of key experiments: brake shoe test on 333.3, continuous dynamic brake implementation, adhesion adjustment on 319.4. |
 | **`/Parametros-Clave/`** | Summary tables with final `MaxForce`, `MaxPower`, `C`, etc., values per series. |
+| **`/Curvas-Traccion/`** | Maxima/WxMaxima scripts and CSV/TXT files for generating custom traction curves. |
 | **`/OpenRails-Logs/`** | Annotated logs showing evolution from unstable configurations to the final calibration. |
 
 ## ⚠️ Intellectual Property Notice
