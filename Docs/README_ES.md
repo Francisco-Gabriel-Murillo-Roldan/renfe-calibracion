@@ -91,7 +91,7 @@ Esta revisión valida la elección de un modelo de fricción dependiente de la v
 | **`/Fichas-Tecnicas/`** | Fichas técnicas de 11 locomotoras (ALCO 313, 316, 318, 321; GM 319.0, 319.2, 319.3, 319.4, 333.3, 333.4). |
 | **`/Experimentos/`** | Documentación de experimentos clave: prueba de zapatas de freno en 333.3, implementación de freno dinámico continuo, ajuste de adherencia en 319.4. |
 | **`/Parametros-Clave/`** | Tablas resumen con valores finales de `MaxForce`, `MaxPower`, `C`, etc., por serie. |
-| **`/Curvas-Traccion/`** | Programas en Maxima/WxMaxima y archivos CSV para generación de curvas de tracción propias. |
+| **`/Curvas-Traccion/`** | Programas en Maxima/WxMaxima y archivos CSV/TXT para generación de curvas de tracción propias. |
 | **`/OpenRails-Logs/`** | Logs comentados que muestran la evolución desde configuraciones inestables hasta la calibración final. |
 
 ## ⚠️ Aviso de Propiedad Intelectual
