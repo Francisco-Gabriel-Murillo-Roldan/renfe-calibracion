@@ -23,14 +23,15 @@
 
 | Carpeta | Contenido |
 |:---|:---|
-| 📄 **[README.md](./README.md)** | Resumen ejecutivo bilingüe del proyecto / Bilingual executive summary |
+| 📄 **[README.md](./README.md)** | Resumen ejecutivo bilingüe del proyecto |
 | 📄 **[LICENSE](./LICENSE)** | Licencia MIT / MIT License |
-| 📁 **[docs/](./docs/)** | Documentación completa en español e inglés / Full documentation in Spanish and English |
-| 📁 **[Fichas-Tecnicas/](./Fichas-Tecnicas/)** | Fichas por locomotora con parámetros finales (11 PDFs) / Per-locomotive sheets with final parameters |
-| 📁 **[Experimentos/](./Experimentos/)** | Informes detallados de experimentos de calibración / Detailed calibration experiment reports |
-| 📁 **[Parametros-Clave/](./Parametros-Clave/)** | Tablas resumen comparativas entre series / Comparative summary tables across series |
-| 📁 **[Curvas-Traccion/](./Curvas-Traccion/)** | Programas Maxima/WxMaxima y CSVs de curvas propias / Maxima scripts and CSVs for custom curves |
-| 📁 **[OpenRails-Logs/](./OpenRails-Logs/)** | Logs de pruebas Antes/Después comentados / Annotated Before/After test logs |
+| 📁 **[Assets/](./Assets/)** | Logo, paleta de colores corporativos y protección de marca |
+| 📁 **[Docs/](./Docs/)** | Documentación completa en español e inglés |
+| 📁 **[Fichas-Tecnicas/](./Fichas-Tecnicas/)** | Fichas por locomotora con parámetros finales (11 PDFs) |
+| 📁 **[Experimentos/](./Experimentos/)** | Informes detallados de experimentos de calibración |
+| 📁 **[Parametros-Clave/](./Parametros-Clave/)** | Tablas resumen comparativas entre series |
+| 📁 **[Curvas-Traccion/](./Curvas-Traccion/)** | Programas Maxima/WxMaxima y curvas en CSV y TXT |
+| 📁 **[OpenRails-Logs/](./OpenRails-Logs/)** | Logs de pruebas Antes/Después anonimizados |
 ---
 
 ## 📖 Documentación Completa | Full Documentation
