@@ -60,13 +60,14 @@ This review validates the choice of a velocity-dependent friction model (as oppo
 |:---|:---|
 | 📄 **[README.md](../README.md)** | Bilingual executive summary of the project |
 | 📄 **[LICENSE](../LICENSE)** | MIT License |
-| 📁 **[docs/](./)** | Full documentation (this folder) |
+| 📁 **[Assets/](../Assets/)** | Logo, corporate colour palette, and brand protection notice |
+| 📁 **[Docs/](./)** | Full documentation (this folder) |
 | │ ├ 📄 **README_EN.md** | This file |
 | │ └ 📄 **README_ES.md** | Spanish version |
 | 📁 **[Fichas-Tecnicas/](../Fichas-Tecnicas/)** | Technical datasheets for 11 locomotives (PDF) |
 | 📁 **[Experimentos/](../Experimentos/)** | Detailed calibration experiment reports |
 | 📁 **[Parametros-Clave/](../Parametros-Clave/)** | Comparative summary tables across series |
-| 📁 **[Curvas-Traccion/](../Curvas-Traccion/)** | Maxima scripts and CSVs for custom traction curves |
+| 📁 **[Curvas-Traccion/](../Curvas-Traccion/)** | Maxima scripts and traction curves (CSV, TXT) |
 | 📁 **[OpenRails-Logs/](../OpenRails-Logs/)** | Annotated Before/After test logs |
 
 ## 🛠️ Methodology (Teluroncio Method)
