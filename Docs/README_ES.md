@@ -47,14 +47,19 @@ Como resultado, se han calibrado **11 series de locomotoras** (ALCO y General Mo
 
 ## 📁 Estructura del Repositorio
 
-| Carpeta / Folder | Contenido |
+| Ruta | Descripción |
 |:---|:---|
-| [`/docs/`](./docs/) | Documentación completa en español e inglés |
-| [`/Fichas-Tecnicas/`](./Fichas-Tecnicas/) | Fichas por locomotora con parámetros finales |
-| [`/Experimentos/`](./Experimentos/) | Informes detallados de experimentos |
-| [`/Parametros-Clave/`](./Parametros-Clave/) | Tablas resumen comparativas |
-| [`/OpenRails-Logs/`](./OpenRails-Logs/) | Logs de pruebas Antes/Después |
-| [`/Curvas-Traccion/`](./Curvas-Traccion/) | Programas Maxima y CSVs de curvas propias |
+| 📄 **[README.md](../README.md)** | Resumen ejecutivo bilingüe del proyecto |
+| 📄 **[LICENSE](../LICENSE)** | Licencia MIT |
+| 📁 **[Assets/](../Assets/)** | Logo, paleta de colores corporativos y protección de marca |
+| 📁 **[Docs/](./)** | Documentación completa (esta carpeta) |
+| │ ├ 📄 **README_ES.md** | Este archivo |
+| │ └ 📄 **README_EN.md** | Versión en inglés |
+| 📁 **[Fichas-Tecnicas/](../Fichas-Tecnicas/)** | Fichas técnicas de 11 locomotoras (PDF) |
+| 📁 **[Experimentos/](../Experimentos/)** | Informes detallados de experimentos de calibración |
+| 📁 **[Parametros-Clave/](../Parametros-Clave/)** | Tablas resumen comparativas entre series |
+| 📁 **[Curvas-Traccion/](../Curvas-Traccion/)** | Programas Maxima y curvas de tracción (CSV, TXT) |
+| 📁 **[OpenRails-Logs/](../OpenRails-Logs/)** | Logs comentados de pruebas Antes/Después |
 
 ## 📚 Fundamento Teórico
 
@@ -81,7 +86,8 @@ Esta revisión valida la elección de un modelo de fricción dependiente de la v
 
 | Archivo / Carpeta | Descripción |
 | :--- | :--- |
-| **`/docs/`** | Documentación completa en español (README_ES.md) e inglés (README_EN.md). |
+| **`/Assets/`** | Logo del proyecto, paleta de colores corporativos y aviso de protección de marca. |
+| **`/Docs/`** | Documentación completa en español (README_ES.md) e inglés (README_EN.md). |
 | **`/Fichas-Tecnicas/`** | Fichas técnicas de 11 locomotoras (ALCO 313, 316, 318, 321; GM 319.0, 319.2, 319.3, 319.4, 333.3, 333.4). |
 | **`/Experimentos/`** | Documentación de experimentos clave: prueba de zapatas de freno en 333.3, implementación de freno dinámico continuo, ajuste de adherencia en 319.4. |
 | **`/Parametros-Clave/`** | Tablas resumen con valores finales de `MaxForce`, `MaxPower`, `C`, etc., por serie. |
