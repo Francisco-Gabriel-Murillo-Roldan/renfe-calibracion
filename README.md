@@ -36,8 +36,8 @@
 
 ## 📖 Documentación Completa | Full Documentation
 
-- **[README en Español](./docs/README_ES.md)**
-- **[README in English](./docs/README_EN.md)**
+- **[README en Español](./Docs/README_ES.md)**
+- **[README in English](./Docs/README_EN.md)**
 
 ---
 
