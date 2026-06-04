@@ -81,6 +81,7 @@ Esta revisión valida la elección de un modelo de fricción dependiente de la v
     *   Selección de `High_Friction_Composite` como material óptimo para locomotoras modernas.
     *   Determinación del límite de 20 kN por zapata para evitar avisos y garantizar un frenado controlado.
 6.  **Documentación**: generación de fichas técnicas completas y tablas de parámetros para cada locomotora.
+**Importante:** Las curvas generadas con el progrma de Maxima (`/Curvas-Traccion/`) son una alternativa a las curvas que ofrece el fabricante del modelo real. Sin embargo, las curvas **deben** ser validadas con la prueba estandarizada. El experimento #4 demuestra que el μ₀ usado para generar la curva debe coincidir con el parámetro A del modelo CK. De no coincidir produce un comportamiento impredecible con lluvia y con nieve.
 
 ## 📖 Contenido del Repositorio
 
@@ -136,4 +137,4 @@ Especializado en calibración paramétrica de material rodante para simulación 
 
 ---
 
-*Última actualización: Mayo 2026*
+*Última actualización: Junio 2026*
