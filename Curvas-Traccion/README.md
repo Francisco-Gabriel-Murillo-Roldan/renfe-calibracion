@@ -83,6 +83,14 @@
 
 ---
 
+## ⚠️ Nota sobre el modelo de adherencia | Note on the Adhesion Model
+
+**Español:** El programa Maxima utiliza la fórmula de adherencia clásica de RENFE/Bochet: μ(V) = μ₀ / (1 + 0.01 × V). Esta fórmula es distinta del modelo Curtius-Kniffler (CK) empleado por Open Rails. El μ₀ introducido en el programa no equivale directamente al parámetro A del CK. La curva de tracción generada debe validarse siempre mediante el Método Teluroncio (prueba estandarizada en rampa) para garantizar su correcto comportamiento en el simulador.
+
+**English:** The Maxima program uses the classic RENFE/Bochet adhesion formula: μ(V) = μ₀ / (1 + 0.01 × V). This formula differs from the Curtius-Kniffler (CK) model used by Open Rails. The μ₀ entered in the program does not directly correspond to the CK parameter A. The generated tractive effort curve must always be validated through the Teluroncio Method (standardised grade test) to ensure correct behaviour in the simulator.
+
+---
+
 ## 📚 Referencia | Reference
 
 Yuan, Z., Wu, M., Tian, C., Zhou, J., & Chen, C. (2021). *A Review on the Application of Friction Models in Wheel-Rail Adhesion Calculation*. Urban Rail Transit, 7(1), 1–11. DOI: [10.1007/s40864-021-00141-4](https://doi.org/10.1007/s40864-021-00141-4)
